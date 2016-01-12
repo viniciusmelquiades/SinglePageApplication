@@ -1,0 +1,27 @@
+﻿{
+	"version": "0.1.0-*",
+	"description": "ASP.NET 5 middleware to serve files for a single page application",
+	"authors": [ "vinicius" ],
+	"tags": [ "" ],
+	"projectUrl": "https://github.com/viniciusmelquiades/SinglePageApplication",
+	"licenseUrl": "https://github.com/viniciusmelquiades/SinglePageApplication/blob/master/LICENSE",
+	"compilationOptions": {
+		"warningsAsErrors": true
+	},
+	"frameworks": {
+		"net451": {
+			"frameworkAssemblies": {
+				"System.Runtime": "4.0.10.0"
+			}
+		},
+		"dotnet5.4": {
+			"dependencies": {
+				"Microsoft.CSharp": "4.0.1-beta-23516"
+			}
+		}
+	},
+	"dependencies": {
+		"Microsoft.AspNet.Http.Abstractions": "1.0.0-rc1-final",
+		"System.Collections.Immutable": "1.1.37"
+	}
+}
