@@ -3,7 +3,7 @@ using Microsoft.AspNet.Http;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SinglePageApplication
+namespace SinglePageApplication.AspNet
 {
 	public class SinglePageAppMiddleware
 	{

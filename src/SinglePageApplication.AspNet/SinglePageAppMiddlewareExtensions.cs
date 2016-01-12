@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNet.Http;
-using SinglePageApplication;
+using SinglePageApplication.AspNet;
 using System.Linq;
 
 namespace Microsoft.AspNet.Builder

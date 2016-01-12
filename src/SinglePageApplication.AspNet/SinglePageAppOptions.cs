@@ -1,7 +1,7 @@
 using Microsoft.AspNet.Http;
 using System.Collections.Immutable;
 
-namespace SinglePageApplication
+namespace SinglePageApplication.AspNet
 {
 	public partial class SinglePageAppOptions
 	{
