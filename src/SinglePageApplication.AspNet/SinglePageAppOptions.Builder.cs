@@ -39,19 +39,6 @@ namespace SinglePageApplication.AspNet
 			}
 
 			/// <summary>
-			/// Ignored the paths /lib and /content by default
-			/// </summary>
-			/// <param name="path"></param>
-			/// <param name="appRoot"></param>
-			/// <returns></returns>
-			public static Builder WithDefaultOptions(PathString path, PathString appRoot)
-			{
-				return new Builder(path, appRoot)
-					.IgnorePath("/lib")
-					.IgnorePath("/Content");
-			}
-
-			/// <summary>
 			/// Generates a new SimglePageAppOptions from this builder
 			/// </summary>
 			/// <returns></returns>
