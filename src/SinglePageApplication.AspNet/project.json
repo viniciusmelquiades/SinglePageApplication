@@ -1,8 +1,12 @@
 ﻿{
 	"version": "0.1.0-*",
-	"description": "ASP.NET 5 middleware to serve files for a single page application",
-	"authors": [ "vinicius" ],
-	"tags": [ "" ],
+	"description": "ASP.NET 5 middleware to serve files for a single page application.",
+	"summary": "Owin Middleware to rewrite the path (inside the request only) to a specific path (the root of your Single Page Application).\nYou'll still need the file server.",
+	"repository": {
+		"type": "git"
+	},
+	"authors": [ "Vinicius Salvati Melquiades" ],
+	"tags": [ "AspNet", "Owin", "dnx", "dotnetcore" ],
 	"projectUrl": "https://github.com/viniciusmelquiades/SinglePageApplication",
 	"licenseUrl": "https://github.com/viniciusmelquiades/SinglePageApplication/blob/master/LICENSE",
 	"compilationOptions": {
