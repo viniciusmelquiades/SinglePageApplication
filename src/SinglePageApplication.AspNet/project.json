@@ -1,10 +1,19 @@
 ﻿{
-	"version": "0.1.0-*",
+	"version": "0.2.0-*",
 
-	"description": "ASP.NET 5 middleware to serve files for a single page application.",
+	"description": "ASP.NET Core middleware to serve files for a single page application.",
 	"authors": [ "Vinicius Salvati Melquiades" ],
 	"buildOptions": {
 		"warningsAsErrors": true
+	},
+	"dependencies": {
+		"NETStandard.Library": "1.6.0",
+		"Microsoft.AspNetCore.Http.Abstractions": "1.0.0",
+		"System.Collections.Immutable": "1.2.0"
+	},
+
+	"frameworks": {
+		"netstandard1.6": { }
 	},
 
 	"packOptions": {
@@ -15,16 +24,6 @@
 			"url": "https://github.com/viniciusmelquiades/SinglePageApplication"
 		},
 		"summary": "Owin Middleware to rewrite the path (inside the request only) to a specific path (the root of your Single Page Application).\nYou'll still need the file server.",
-		"tags": [ "AspNet", "Owin", "dnx", "dotnetcore" ]
-	},
-
-	"dependencies": {
-		"NETStandard.Library": "1.5.0-rc2-24027",
-		"Microsoft.AspNetCore.Http.Abstractions": "1.0.0-rc2-final",
-		"System.Collections.Immutable": "1.2.0-rc2-24027"
-	},
-
-	"frameworks": {
-		"netstandard1.5": { }
+		"tags": [ "AspNet", "Owin", "dnx", "dotnetcore", "spa" ]
 	}
 }
