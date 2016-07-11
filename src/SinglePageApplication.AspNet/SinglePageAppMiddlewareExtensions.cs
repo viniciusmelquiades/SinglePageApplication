@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using SinglePageApplication.AspNet;
 using System.Linq;
 
-namespace Microsoft.AspNet.Builder
+namespace Microsoft.AspNetCore.Builder
 {
 	public static class SinglePageAppMiddlewareExtensions
 	{
