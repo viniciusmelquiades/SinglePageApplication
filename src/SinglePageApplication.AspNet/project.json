@@ -7,16 +7,20 @@
 		"warningsAsErrors": true
 	},
 	"dependencies": {
-		"NETStandard.Library": "1.6.0",
+		"NETStandard.Library": {
+			"type": "platform",
+			"version": "1.6.0"
+		},
 		"Microsoft.AspNetCore.Http.Abstractions": "1.0.0",
 		"System.Collections.Immutable": "1.2.0"
 	},
 
 	"frameworks": {
-		"netstandard1.3": { }
+		"netstandard1.3": {}
 	},
 
 	"packOptions": {
+		"projectUrl": "https://github.com/viniciusmelquiades/SinglePageApplication",
 		"licenseUrl": "https://github.com/viniciusmelquiades/SinglePageApplication/blob/master/LICENSE",
 		"owners": [ "Vinicius Salvati Melquiades" ],
 		"repository": {
