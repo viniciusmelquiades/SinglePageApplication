@@ -1,31 +1,29 @@
 ﻿{
-	"version": "0.1.0-*",
-	"description": "ASP.NET 5 middleware to serve files for a single page application.",
-	"summary": "Owin Middleware to rewrite the path (inside the request only) to a specific path (the root of your Single Page Application).\nYou'll still need the file server.",
-	"repository": {
-		"type": "git"
-	},
+	"version": "0.2.0-*",
+
+	"description": "ASP.NET Core middleware to serve files for a single page application.",
 	"authors": [ "Vinicius Salvati Melquiades" ],
-	"tags": [ "AspNet", "Owin", "dnx", "dotnetcore" ],
-	"projectUrl": "https://github.com/viniciusmelquiades/SinglePageApplication",
-	"licenseUrl": "https://github.com/viniciusmelquiades/SinglePageApplication/blob/master/LICENSE",
-	"compilationOptions": {
+	"buildOptions": {
 		"warningsAsErrors": true
 	},
-	"frameworks": {
-		"net451": {
-			"frameworkAssemblies": {
-				"System.Runtime": "4.0.10.0"
-			}
-		},
-		"dotnet5.4": {
-			"dependencies": {
-				"Microsoft.CSharp": "4.0.1-beta-23516"
-			}
-		}
-	},
 	"dependencies": {
-		"Microsoft.AspNet.Http.Abstractions": "1.0.0-rc1-final",
-		"System.Collections.Immutable": "1.1.37"
+		"NETStandard.Library": "1.6.0",
+		"Microsoft.AspNetCore.Http.Abstractions": "1.0.0",
+		"System.Collections.Immutable": "1.2.0"
+	},
+
+	"frameworks": {
+		"netstandard1.3": { }
+	},
+
+	"packOptions": {
+		"licenseUrl": "https://github.com/viniciusmelquiades/SinglePageApplication/blob/master/LICENSE",
+		"owners": [ "Vinicius Salvati Melquiades" ],
+		"repository": {
+			"type": "git",
+			"url": "https://github.com/viniciusmelquiades/SinglePageApplication"
+		},
+		"summary": "Owin Middleware to rewrite the path (inside the request only) to a specific path (the root of your Single Page Application).\nYou'll still need the file server.",
+		"tags": [ "AspNet", "Owin", "dnx", "dotnetcore", "spa" ]
 	}
 }
