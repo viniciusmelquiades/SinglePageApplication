@@ -21,7 +21,7 @@ namespace SinglePageApplication.AspNet
 				context.Request.Path.StartsWithSegments(options.Path) &&
 				!options.IgnoredPaths.Any(path => context.Request.Path.StartsWithSegments(path)))
 			{
-				context.Request.Headers.Add("X-ORIGINAL-PATH", new Microsoft.Extensions.Primitives.StringValues(context.Request.Path));
+				context.Request.PathBase = context.Request.Path;
 				context.Request.Path = options.AppRoot;				
 			}
 
