@@ -21,7 +21,8 @@ namespace SinglePageApplication.AspNet
 				context.Request.Path.StartsWithSegments(options.Path) &&
 				!options.IgnoredPaths.Any(path => context.Request.Path.StartsWithSegments(path)))
 			{
-				context.Request.Path = options.AppRoot;
+				context.Request.PathBase = context.Request.Path;
+				context.Request.Path = options.AppRoot;				
 			}
 
 
